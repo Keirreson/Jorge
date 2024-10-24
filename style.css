@@ -6,10 +6,14 @@
 
 body {
     font-family: Bai Jamjuree;
-    background: url('img/bg-desktop.webp')
+    background: url('bg-desktop.webp')
 }
 #container {
     display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
 }
 .cartao {
     margin: 1rem 1rem;
@@ -41,6 +45,7 @@ body {
 .cartao__conteudo p {
     margin-top: 1rem;
     padding: 2rem;
+    margin-top: 4rem;
 }
 .cartao__conteudo__pergunta p {
     color: var(--text-color);
@@ -57,8 +62,13 @@ body {
 .cartao__conteudo__pergunta,
 .cartao__conteudo__resposta{
     backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
-
+.cartao__conteudo__resposta{
+    transform: rotateY(180deg);
+}
 
 
 
